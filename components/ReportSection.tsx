@@ -29,7 +29,7 @@ const ReportSection: React.FC<ReportSectionProps> = ({ section, report, setRepor
 
   return (
     <div className="border p-4 rounded-md mb-4">
-      <h2 className="text-xl font-bold mb-2">{section}</h2>
+      <h2 className="text-xl font-bold mb-2">{section.charAt(0).toUpperCase() + section.slice(1)}</h2>
       <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
         <SortableContext items={report[section].map(item => item.id)}>
           {report[section].map((item, index) => (
