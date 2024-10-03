@@ -33,7 +33,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex flex-col gap-4 p-4">
+    <main className="flex flex-col gap-4 p-12">
       <h1 className="text-3xl font-bold mb-4 text-center">Report Builder</h1>
       <div className="flex flex-col md:flex-row gap-4 md:gap-8">
         {/* Report Sections */}
