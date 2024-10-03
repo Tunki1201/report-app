@@ -45,7 +45,7 @@ export default function Home() {
     const elementCount = report[section].filter(item => item.type.startsWith(element)).length;
 
     // Create the label (e.g., Heading1, Detail2) based on the count
-    const elementLabel = `${element}${elementCount + 1}`;
+    const elementLabel = `${element} ${elementCount + 1}`;
 
     setReport((prevReport) => ({
       ...prevReport,
